@@ -60,7 +60,7 @@ dgemm_veclib.o: dgemm_blas.c
 run:    $(TIMINGS)
 
 timing-%.csv: matmul-%
-	OPENMP_NUM_THREADS=1 ./matmul-$*
+	OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 ./matmul-$*
 
 # ---
 #  Rules for plotting
