@@ -18,7 +18,7 @@ const char* dgemm_desc = "Three-level blocked dgemm with AVX2 and manual loop un
 #endif
 
 #ifndef BLOCK_SIZE_L2
-#define BLOCK_SIZE_L2 ((int) 128)
+#define BLOCK_SIZE_L2 ((int) 256)
 #endif
 
 #ifndef BLOCK_SIZE_L1

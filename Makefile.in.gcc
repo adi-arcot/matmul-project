@@ -16,7 +16,7 @@ FFLAGS =
 LDFLAGS = -fopenmp
 
 # Add -DDEBUG_RUN to CPPFLAGS to cut down on the cases.
-CPPFLAGS = "-DCOMPILER=\"$(CC)\"" "-DFLAGS=\"$(OPTFLAGS)\"" -DDEBUG_RUN
+CPPFLAGS = "-DCOMPILER=\"$(CC)\"" "-DFLAGS=\"$(OPTFLAGS)\"" 
 
 # Compile a C version (using basic_dgemm.c, in this case):
 LIBS = -lm 
